@@ -1,0 +1,654 @@
+/* ==================================== COPIER LES PARTIES BODY, HEADER, FOOTER */
+
+
+
+/* ========================================================= RESET CSS */
+
+body, header, nav, ul, ul li, ul li ul {
+	padding: 0;
+	margin: 0;
+	background-attachment: fixed;
+	background-position: top left;
+	background-repeat:no-repeat;
+}
+
+a {outline: none;}
+
+
+
+
+/* ============================================ BACKGROUND, TYPO, PAGE SIZE */
+
+body  {	max-width: 1024px;
+				margin: auto;
+				background-color: #FFFFFF;
+				font-family: "Open Sans", Arial , sans-serif;
+				background-image:url(images/logosimplon.png);
+				}
+
+
+
+
+/* ============================================================ HEADER */
+
+@media screen and (max-width: 745px) {
+	header { 	max-height: 60px;
+						border: none;
+						min-width: 300px;
+						}
+}
+
+header { 	height: 198px;
+					border: none;
+					min-width: 300px;
+					}
+
+
+/* ====================================== TITRE ET NAV */
+
+.titre {	vertical-align: middle;
+				text-align: center;}
+
+
+@media screen and (min-width: 745px) {
+	.logomini, .menumini, .lepetitmenu {display: none;}
+}
+
+nav { 	border-top: solid 1px #000000;
+			border-bottom: solid 1px #000000;
+			min-height: 50px;
+			}
+
+
+
+@media screen and (max-width: 745px) {
+
+/* ============= MENU APPARAISSANT AU SURVOL DU BOUTON DE MENU */
+
+		.lepetitmenu { 	position: absolute;
+										right: 10px;
+										top: 1px;
+										width: 170px;
+										height: 50px;
+										}
+
+		ul.menuxs { display: none; }
+
+		div.lepetitmenu:hover ul.menuxs {
+						display:block;
+						max-width: 170px;
+						min-width: 70px;
+						margin-top: 50px;
+						background-color: #B0CF90;
+						border-radius: 5px;
+						padding: 5px;
+						}
+
+		.menuxs li {	display: block;
+								max-width: 150px;
+								min-width: 70px;
+								border-bottom: solid 1px #A0BF80;
+								}
+
+		.menuxs li a {	font-size: 14px;
+									text-align: right;
+									text-decoration: none;
+									display: block;
+									color: #FFFFFF;
+									}
+
+	.menuxs li a:hover {	font-size: 14px;
+												text-align: right;
+												text-decoration: none;
+												display: block;
+												transform: none;
+												color: #000000;
+												}
+
+
+/* ============ BARRE DE NAVIGATION PENDANT RÉDUCTION DE LA PAGE */
+
+	nav {	max-height: 50px;
+				position: fixed;
+				background-color: #F0F1F0;
+				width: 100%;
+				}
+
+	nav ul {display: none;}
+
+	.titre {display: none;}
+
+
+	.logomini {	vertical-align: middle;
+							text-align: left;
+							float: left;
+							min-height: 46px;
+							min-width: 108px;
+							max-width: 108px;
+							max-height: 46px;
+							padding-left: 10px;
+							}
+
+	.menumini  {	vertical-align: middle;
+								text-align: center;
+								max-height: 46px;
+								max-width: 46px;
+								padding-right: 10px;
+								float: right;
+								}
+
+	.logominiimg {	height: 46px;
+									width: 108px;
+									}
+
+	.menuminiimg {	max-height: 46px;
+										max-width: 46px;
+										}
+
+
+}
+
+
+/* ================================= HEADER: MENU NORMAL */
+
+nav ul {	text-align: center;
+				padding: 5px ;
+				margin: 0;
+				}
+
+
+nav ul li {	display: inline-block;}
+
+
+nav ul li a {	text-decoration: none;
+						color: #000000;
+						display: block;
+						}
+
+
+nav ul li a:hover {	text-decoration: none;
+						color: #81B934;
+						-webkit-transform: scale(1.2);
+    					-moz-transform: scale(1.2);
+    					-o-transform: scale(1.2);
+    					transform: scale(1.2);
+    					}
+
+
+nav ul li ul {	display: none;
+							padding-top: 15px; }
+
+
+nav ul li:hover ul {display: block; 	max-width: 170px;}
+
+nav li:hover ul li {float: none;
+									padding: 0;
+									padding-top: 8px;
+									}
+
+
+nav li ul {	position: absolute;
+					text-align: left;
+					filter: alpha(opacity=90);
+					opacity: 0.9;
+    				min-width:170px;
+    				}
+
+
+nav li ul a {
+		color: #000000;
+		font-family: 'Molengo', Arial, sans-serif;
+		font-size: 15px;
+		text-decoration: none;
+    	padding: 4px;
+    	display: block;
+    	background: transparent;
+    	width: 230px;
+    	-moz-transition: all .5s;
+    	-webkit-transition: all .5s;
+    	-o-transition: all .5s;
+    	transition: all .5s;
+    	line-height: 20px;
+    	}
+
+nav li ul a:hover {
+		color:#81B934;
+		background: #EDF2E3;
+    	padding-left: 20px;
+    	width: 160px;
+    	-moz-transition: all .5s;
+    	-webkit-transition: all .5s;
+    	-o-transition: all .5s;
+    	transition: all .5s;
+    	}
+
+/* FIN DU HEADER*/
+
+
+
+
+/* CONTENU SPÉCIFIQUE DE LA PAGE */
+
+/* Mon CSS */
+section {
+  width: 100%;
+  margin: auto;
+	margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  background-color: #88C057;
+}
+
+#wrapper {
+  width: 700px;
+  margin: auto;
+	overflow: auto;
+	padding-top: 50px;
+}
+
+#slideshow_photo {
+  width: 650px;
+	margin: auto;
+  overflow: hidden;
+}
+
+#slideshow_photo figure {
+  padding: 0px;
+  display: flex; /* Images côte à côte */
+  width: 500%; /* 5 images ! 5*100 */
+  animation: slide 20s linear 5s infinite; /* Normes W3c */
+  -moz-animation: slide 20s linear 5s infinite; /* Firefox */
+  -webkit-animation: slide 20s linear 5s infinite; /* Chrome et Safari */
+  -o-animation: slide 20s linear 5s infinite; /* Opera */
+	-ms-animation: slide 20s linear 5s infinite; /* IE */
+}
+
+#slideshow_photo li {
+  width: 100%;
+  list-style: none;
+}
+
+#slideshow_photo img {
+	z-index: 1;
+	width: 100%;
+	cursor: pointer;
+}
+
+#slideshow_photo figcaption {
+	z-index: 2;
+	position: relative;
+	text-align: center;
+  background-color: white;
+  opacity: 0.7;
+  width: auto;
+	height: 7%;
+  bottom: 70px;
+  color: black;
+  padding-bottom: 30px;
+	animation: anim_figcaption 4s linear 5s infinite; /* Normes W3c */
+	-moz-animation: anim_figcaption 4s linear 5s infinite; /* Firefox */
+	-webkit-animation: anim_figcaption 4s linear 5s infinite; /* Chrome et Safari */
+	-o-animation: anim_figcaption 4s linear 5s infinite; /* Opera */
+	-ms-animation: anim_figcaption 4s linear 5s infinite; /* IE */
+}
+
+#player_button {
+	opacity: 0;
+}
+
+/* Animation slide pour slideshow_photo */
+
+@keyframes slide { /* Normes W3c */
+  0% {margin-left: 0%;}
+  15% {margin-left: 0%;}
+
+  20% {margin-left: -100%;}
+  35% {margin-left: -100%;}
+
+  40% {margin-left: -200%;}
+  55% {margin-left: -200%;}
+
+  60% {margin-left: -300%;}
+  75% {margin-left: -300%;}
+
+  80% {margin-left: -400%;}
+  95% {margin-left: -400%;}
+
+  100% {margin-left: 0%;}
+}
+
+@-moz-keyframes slide { /* Firefox */
+  0% {margin-left: 0%;}
+  15% {margin-left: 0%;}
+
+  20% {margin-left: -100%;}
+  35% {margin-left: -100%;}
+
+  40% {margin-left: -200%;}
+  55% {margin-left: -200%;}
+
+  60% {margin-left: -300%;}
+  75% {margin-left: -300%;}
+
+  80% {margin-left: -400%;}
+  95% {margin-left: -400%;}
+
+  100% {margin-left: 0%;}
+}
+
+@-webkit-keyframes slide { /* Chrome et Safari */
+  0% {margin-left: 0%;}
+  15% {margin-left: 0%;}
+
+  20% {margin-left: -100%;}
+  35% {margin-left: -100%;}
+
+  40% {margin-left: -200%;}
+  55% {margin-left: -200%;}
+
+  60% {margin-left: -300%;}
+  75% {margin-left: -300%;}
+
+  80% {margin-left: -400%;}
+  95% {margin-left: -400%;}
+
+  100% {margin-left: 0%;}
+}
+
+@-o-keyframes slide { /* Opera */
+  0% {margin-left: 0%;}
+  15% {margin-left: 0%;}
+
+  20% {margin-left: -100%;}
+  35% {margin-left: -100%;}
+
+  40% {margin-left: -200%;}
+  55% {margin-left: -200%;}
+
+  60% {margin-left: -300%;}
+  75% {margin-left: -300%;}
+
+  80% {margin-left: -400%;}
+  95% {margin-left: -400%;}
+
+  100% {margin-left: 0%;}
+}
+
+@-ms-keyframes slide { /* IE*/
+  0% {margin-left: 0%;}
+  15% {margin-left: 0%;}
+
+  20% {margin-left: -100%;}
+  35% {margin-left: -100%;}
+
+  40% {margin-left: -200%;}
+  55% {margin-left: -200%;}
+
+  60% {margin-left: -300%;}
+  75% {margin-left: -300%;}
+
+  80% {margin-left: -400%;}
+  95% {margin-left: -400%;}
+
+  100% {margin-left: 0%;}
+}
+
+/* -------------------------------------------- */
+
+/* Animation du figcaption */
+@keyframes anim_figcaption {
+	0% {bottom: 0px; opacity: 0;} /* Début */
+
+	10% {bottom: 70px; opacity: 0.7;} /* 2s */
+	70% {bottom: 70px; opacity: 0.7;} /* 14s */
+
+	80% {bottom: 0px; opacity: 0;} /* 16s */
+	100% {bottom: 0px; opacity: 0;}
+}
+
+@-moz-keyframes anim_figcaption {
+	0% {bottom: 0px; opacity: 0;} /* Début */
+
+	10% {bottom: 70px; opacity: 0.7;} /* 2s */
+	70% {bottom: 70px; opacity: 0.7;} /* 14s */
+
+	80% {bottom: 0px; opacity: 0;} /* 16s */
+	100% {bottom: 0px; opacity: 0;}
+}
+
+@-webkit-keyframes anim_figcaption {
+	0% {bottom: 0px; opacity: 0;} /* Début */
+
+	10% {bottom: 70px; opacity: 0.7;} /* 2s */
+	70% {bottom: 70px; opacity: 0.7;} /* 14s */
+
+	80% {bottom: 0px; opacity: 0;} /* 16s */
+	100% {bottom: 0px; opacity: 0;}
+}
+
+@-o-keyframes anim_figcaption {
+	0% {bottom: 0px; opacity: 0;} /* Début */
+
+	10% {bottom: 70px; opacity: 0.7;} /* 2s */
+	70% {bottom: 70px; opacity: 0.7;} /* 14s */
+
+	80% {bottom: 0px; opacity: 0;} /* 16s */
+	100% {bottom: 0px; opacity: 0;}
+}
+
+@-ms-keyframes anim_figcaption {
+	0% {bottom: 0px; opacity: 0;} /* Début */
+
+	10% {bottom: 70px; opacity: 0.7;} /* 2s */
+	70% {bottom: 70px; opacity: 0.7;} /* 14s */
+
+	80% {bottom: 0px; opacity: 0;} /* 16s */
+	100% {bottom: 0px; opacity: 0;}
+}
+/* ----------------------- */
+
+/* Timeline et son animation pour le slideshow_photo */
+#timeline {
+	z-index: 3;
+	position: absolute;
+	background: #E0C118;
+	width: 0;
+	height: 1px;
+	box-shadow: 0px 0px 2px 2px white;
+	border-radius: 5px;
+	animation: anim_timeline 20s linear 5s infinite; /* Normes W3c */
+	-moz-animation: anim_timeline 20s linear 5s infinite; /* Firefox */
+	-webkit-animation: anim_timeline 20s linear 5s infinite; /* Chrome et Safari */
+	-o-animation: anim_timeline 20s linear 5s infinite; /* Opera */
+	-ms-animation: anim_timeline 20s linear 5s infinite; /* IE */
+}
+
+@keyframes anim_timeline { /* Normes W3c */
+	0% {width: 0px; background: #E06818}
+	95% {width: 650px; background: #E0C118}
+	100% {width: 0px;}
+}
+
+@-moz-keyframes anim_timeline { /* Firefox */
+	0% {width: 0px; background: #E06818}
+	95% {width: 650px; background: #E0C118}
+	100% {width: 0px;}
+}
+
+@-webkit-keyframes anim_timeline { /* Chrome et Safari */
+	0% {width: 0px; background: #E06818}
+	95% {width: 650px; background: #E0C118}
+	100% {width: 0px;}
+}
+
+@-o-keyframes anim_timeline { /* Opera */
+	0% {width: 0px; background: #E06818}
+	95% {width: 650px; background: #E0C118}
+	100% {width: 0px;}
+}
+
+@-ms-keyframes anim_timeline { /* IE */
+	0% {width: 0px; background: #E06818}
+	95% {width: 650px; background: #E0C118}
+	100% {width: 0px;}
+}
+/* -------------------------------------------- */
+
+#slider_videos {
+	width: 650px;
+	margin: auto;
+	overflow: hidden;
+}
+
+#videos {
+	width: 300%;
+	display: flex;
+	transition: margin-left 1s;
+	-moz-transition: margin-left 1s;
+	-webkit-transition: margin-left 1s;
+	-o-transition: margin-left 1s;
+	-ms-transition: margin-left 1s;
+}
+
+#slider_videos iframe {
+  width: 100%;
+}
+
+#next {
+	opacity: 0;
+	border-radius: 20px;
+	background-color: black;
+}
+
+#next:hover {
+	cursor: pointer;
+}
+
+#previous {
+	opacity: 0;
+	border-radius: 20px;
+	background-color: black;
+}
+
+#previous:hover {
+	cursor: pointer;
+}
+
+#bottom {
+  width: 90%;
+	min-width: 700px;
+  height: 200px;
+  margin: auto;
+	margin-bottom: 150px;
+}
+
+#bottom ul, article {
+  display: inline-block;
+  margin: auto;
+}
+
+#bottom ul {
+	text-align: right;
+	padding-right: 20px;
+	width: 40%;
+	height: 200px;
+	float: left;
+	list-style: none;
+	margin-top: 15px;
+}
+
+#bottom li {
+	margin-bottom: 5px;
+}
+
+#bottom a {
+	color: #88C057;
+	text-decoration: none;
+}
+
+#bottom a:hover {
+	text-decoration: underline;
+}
+
+#bottom article {
+	text-align: left;
+	width: 50%;
+}
+
+#bottom article p {
+  border-left: 1px #88C057 solid;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+
+/* ---------------------------------- Fin de mon CSS */
+
+
+/* FIN DU CONTENU SPÉCIFIQUE DE LA PAGE */
+
+
+
+/* ============================================================== ASCENSEUR */
+
+#fleche-up{
+		border: none;
+		width: 64px;
+		height: 64px;
+		z-index: 10;
+		margin-right: 2px;
+		position: fixed;
+		bottom: 50%;
+		top: 80%;
+  		right: 0%;
+  		left: 92%;
+  		}
+
+/* FIN DE L'ASCENSEUR */
+
+
+
+
+
+/* ================================================================== FOOTER */
+
+footer { 	border-top: solid 1px #000000;
+					border-bottom: solid 1px #000000;
+	        		margin-bottom: 10px;
+	        		background-color: #000000;
+	        		}
+
+h5 { 	color: #FFFFFF;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: normal;
+			}
+
+footer p { font-size: 10px;
+					text-align: center;
+					color: #FFFFFF;
+					}
+
+header ul, footer ul {	text-align: center;
+		padding: 5px ;
+		margin: 0;
+		min-width: 300px;
+		}
+
+
+header ul li, footer ul li {
+		display: inline-block;
+		padding: 5px;
+		width: 170px;
+		vertical-align: top;
+		}
+
+a.foot:link, a.foot:visited {font-size:10px; color: #D2D7D3; text-decoration:none; }
+a.foot:hover, a.foot:focus, a.foot:active { font-size:10px; color: #95A5A6; text-decoration:none; }
+
+
+/* FIN DU FOOTER */
+
+/* FIN DU CSS */

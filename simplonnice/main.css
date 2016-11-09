@@ -1,0 +1,491 @@
+/* ==================================== COPIER LES PARTIES BODY, HEADER, FOOTER */
+
+
+
+/* ========================================================= RESET CSS */
+
+body, header, nav, ul, ul li, ul li ul {
+	padding: 0; 
+	margin: 0;
+	background-attachment: fixed; 
+	background-position: top left;
+	background-repeat:no-repeat;
+}
+
+a {outline: none;}
+
+
+
+
+/* ============================================ BACKGROUND, TYPO, PAGE SIZE */
+
+body  {	max-width: 1024px;
+				margin: auto;
+				background-color: #FFFFFF;
+				font-family: "Open Sans", Arial , sans-serif; 
+				background-image:url(images/logosimplon.png);
+				}
+
+
+
+
+/* ============================================================ HEADER */
+
+@media screen and (max-width: 745px) {
+	header { 	max-height: 60px;
+						border: none;
+						min-width: 300px;
+						}
+}
+
+header { 	height: 198px;
+					border: none;
+					min-width: 300px;
+					}
+
+
+/* ====================================== TITRE ET NAV */
+
+.titre {	vertical-align: middle;
+				text-align: center;}
+
+
+@media screen and (min-width: 745px) {
+	.logomini, .menumini, .lepetitmenu {display: none;}
+}
+
+nav { 	border-top: solid 1px #000000;
+			border-bottom: solid 1px #000000;
+			min-height: 50px;
+			}
+
+
+
+@media screen and (max-width: 745px) {
+
+/* ============= MENU APPARAISSANT AU SURVOL DU BOUTON DE MENU */
+
+		.lepetitmenu { 	position: absolute;
+										right: 10px;
+										top: 1px;
+										width: 170px;
+										height: 50px;
+										}
+	
+		ul.menuxs { display: none; }
+	
+		div.lepetitmenu:hover ul.menuxs { 	
+						display:block;
+						max-width: 170px;
+						min-width: 70px;
+						margin-top: 50px;
+						background-color: #B0CF90;
+						border-radius: 5px;
+						padding: 5px;
+						}
+	
+		.menuxs li {	display: block;
+								max-width: 150px;
+								min-width: 70px;
+								border-bottom: solid 1px #A0BF80;
+								}
+
+		.menuxs li a {	font-size: 14px;
+									text-align: right;
+									text-decoration: none;
+									display: block;
+									color: #FFFFFF;
+									} 
+	
+	.menuxs li a:hover {	font-size: 14px;
+												text-align: right;
+												text-decoration: none;
+												display: block;
+												transform: none;
+												color: #000000;
+												} 
+	
+	
+/* ============ BARRE DE NAVIGATION PENDANT RÉDUCTION DE LA PAGE */
+
+	nav {	max-height: 50px;
+				position: fixed;
+				background-color: #F0F1F0;
+				width: 100%;
+				}
+	
+	nav ul {display: none;}
+			
+	.titre {display: none;}		
+		
+		
+	.logomini {	vertical-align: middle;
+							text-align: left;
+							float: left;
+							min-height: 46px;
+							min-width: 108px;
+							max-width: 108px;
+							max-height: 46px;
+							padding-left: 10px;
+							}
+
+	.menumini  {	vertical-align: middle;
+								text-align: center;
+								max-height: 46px;
+								max-width: 46px;
+								padding-right: 10px;
+								float: right;
+								}
+								
+	.logominiimg {	height: 46px;
+									width: 108px;
+									}
+
+	.menuminiimg {	max-height: 46px;
+										max-width: 46px;
+										}
+
+											
+}
+
+
+/* ================================= HEADER: MENU NORMAL */
+
+nav ul {	text-align: center;
+				padding: 5px ;
+				margin: 0;
+				}
+
+
+nav ul li {	display: inline-block;}
+
+
+nav ul li a {	text-decoration: none;
+						color: #000000;
+						display: block;
+						}
+
+
+nav ul li a:hover {	text-decoration: none;
+						color: #81B934;
+						-webkit-transform: scale(1.2);
+    					-moz-transform: scale(1.2);
+    					-o-transform: scale(1.2);
+    					transform: scale(1.2);
+    					}
+
+
+nav ul li ul {	display: none; 
+							padding-top: 15px; }
+
+
+nav ul li:hover ul {display: block; 	max-width: 170px;}
+
+nav li:hover ul li {float: none;
+									padding: 0;
+									padding-top: 8px;
+									}
+
+
+nav li ul {	position: absolute;
+					text-align: left;
+					filter: alpha(opacity=90);
+					opacity: 0.9;
+    				min-width:170px;
+    				}
+
+
+nav li ul a {
+		color: #000000;
+		font-family: 'Molengo', Arial, sans-serif;
+		font-size: 15px;
+		text-decoration: none;
+    	padding: 4px;
+    	display: block;
+    	background: transparent;
+    	width: 230px;
+    	-moz-transition: all .5s; 
+    	-webkit-transition: all .5s; 
+    	-o-transition: all .5s; 
+    	transition: all .5s;
+    	line-height: 20px;
+    	}
+
+nav li ul a:hover {
+		color:#81B934;
+		background: #EDF2E3;
+    	padding-left: 20px;
+    	width: 160px;
+    	-moz-transition: all .5s; 
+    	-webkit-transition: all .5s; 
+    	-o-transition: all .5s; 
+    	transition: all .5s;
+    	}
+
+/* FIN DU HEADER*/
+
+
+
+
+
+
+/* =============================================== CONTENU PAGE SIMPLONNICE */
+
+.container { max-width: 1024px;
+						margin-bottom: 50px;
+						margin-top: 100px;
+						}
+
+/* ============================================== CODE COMMUN AUX 3 CADRES */
+
+/* ======================================================== LE CADRE */
+.cadre-nice, .cadre-hublot, .cadre-simplon { 	
+				margin: 0;
+				margin-bottom: 50px;
+				max-width: 1024px;
+				min-width: 300px;
+				height: 450px;				
+				display: block;
+				border-radius: 10px;
+				text-align: center;
+				background-attachment: scroll;
+				background-position: top left;
+				background-repeat: no-repeat;
+				}
+				
+.cadre-nice { background-image:url(images/nice.jpg); }
+
+.cadre-hublot { background-image:url(images/abattoirs.jpg); }
+
+.cadre-simplon { background-image:url(images/simplon.jpg); }
+
+
+/* =================================================== LA DESCRIPTION */
+.zone-description-nice, .zone-description-hublot, .zone-description-simplon { 
+				padding: 0;				
+				margin-top: 20px;
+				margin-bottom: 20px;
+				max-width: 500px;
+				min-width: 250px;
+				max-height: 410px;
+				min-height: 225px;
+				display: inline-block;
+				vertical-align: bottom;
+				background-image: url(images/transp.png);
+				overflow: auto;
+				font-size: 12px;
+				color: #888888;
+				text-align: justify;
+				}
+
+/* ========================= TEXTE DE LA DESCRIPTION */
+.description {	padding: 10px; 
+				font-size: 12px;
+				color: #000000;
+				text-align: justify;
+				}
+
+.titre-description {	
+						padding: 0;
+						padding-left: 10px; 
+						padding-right: 10px;
+						font-size: 12px;
+						color: #006600;
+						text-align: left;
+						text-transform: uppercase;
+						font-weight: bold;
+						}
+
+.source {	padding: 10px; 
+					font-size: 10px;
+					color: #888888;
+					text-align: center;
+					font-style: italic;
+					}
+					
+a.lien:link, a.lien:visited {font-size:12px; color: #888888; text-decoration:none; }
+a.lien:hover, alien:focus, a.lien:active { font-size:12px; color: #95A5A6 ; text-decoration:none; }
+
+
+/* =================================================== TITRE DU CADRE */
+
+.zone-titre-normal-nice, .zone-titre-normal-simplon, .zone-titre-normal-hublot {display: none;}
+
+@media screen and (min-width: 1004px) {
+
+.zone-titre-normal-nice, .zone-titre-normal-simplon { 
+				padding: 0;				
+				margin-top: 20px;
+				margin-bottom: 20px;
+				width: 450px;
+				min-width: 250px;
+				max-height: 410px;
+				display: inline-block;
+				vertical-align: bottom;
+				overflow: auto;
+				text-align: left;
+				}
+
+.zone-titre-normal-hublot { 
+				padding: 0;				
+				margin-top: 20px;
+				margin-bottom: 20px;
+				width: 450px;
+				min-width: 250px;
+				max-height: 410px;
+				display: inline-block;
+				vertical-align: bottom;
+				overflow: auto;
+				text-align: right;
+				}
+
+.titre-normal {	font-size: 50px; 
+								color: #FFFFFF;
+								text-transform: uppercase;
+								}
+}
+
+.zone-titre-reduit, .zone-titre-reduit-hublot,  .zone-titre-reduit-hubmoyen {display: none;}
+
+
+
+/* ========================= LORSQUE LA LARGEUR DE LA PAGE EST ENTRE 755px ET 1004px */
+
+@media screen and (min-width: 755px) and (max-width: 1004px) {
+
+.zone-description-nice, .zone-description-hublot, .zone-description-simplon { 
+				padding: 0;				
+				margin-top: 20px;
+				margin-bottom: 20px;
+				max-width: 500px;
+				min-width: 250px;
+				max-height: 410px;
+				clear: both;
+				}
+
+.zone-titre-reduit-hublot {display: none;}
+
+.zone-titre-reduit, .zone-titre-reduit-hubmoyen { 
+				padding: 0;		
+				margin: 0;		
+				margin-top: 25px;
+				min-width: 250px;
+				max-height: 80px;
+				display: inline-block;
+				vertical-align: bottom;
+				overflow: auto;
+				text-align: center;
+				}	
+
+.titre-reduit {		font-size: 30px; 
+								color: #FFFFFF;
+								text-transform: uppercase;
+								}
+
+
+}
+
+
+/* ========================= LORSQUE LA LARGEUR DE LA PAGE EST ENTRE 0px ET 755px */
+
+@media screen and (max-width: 755px) {
+
+.zone-description-nice, .zone-description-hublot, .zone-description-simplon { 
+				padding: 0;				
+				margin-top: 20px;
+				margin-bottom: 20px;
+				max-width: 500px;
+				min-width: 250px;
+				max-height: 300px;
+				height: 100%;
+				clear: both;
+				}
+
+.zone-titre-reduit-hubmoyen {display: none;}
+
+.zone-titre-reduit, .zone-titre-reduit-hublot { 
+				padding: 0;		
+				margin: 0;		
+				margin-top: 25px;
+				min-width: 250px;
+				max-height: 80px;
+				display: inline-block;
+				vertical-align: bottom;
+				overflow: auto;
+				text-align: center;
+				}
+				
+.titre-reduit {		font-size: 30px; 
+								color: #FFFFFF;
+								text-transform: uppercase;
+								}
+
+}
+
+/* FIN DU CONTENU DE LA PAGE SIMPLONNICE */
+
+
+
+
+
+/* ============================================================== ASCENSEUR */
+
+#fleche-up{
+		border: none;
+		width: 64px;
+		height: 64px;
+		z-index: 10;
+		margin-right: 2px;
+		position: fixed;
+		bottom: 50%;
+		top: 80%;
+  		right: 0%;
+  		left: 92%;
+  		}
+
+/* FIN DE L'ASCENSEUR */
+
+
+
+
+
+/* ================================================================== FOOTER */
+
+footer { 	border-top: solid 1px #000000;
+					border-bottom: solid 1px #000000;
+	        		margin-bottom: 10px;
+	        		background-color: #000000;
+	        		}
+
+h5 { 	color: #FFFFFF;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: normal;
+			}
+
+footer p { font-size: 10px;
+					text-align: center;
+					color: #FFFFFF;
+					}
+
+ul {	text-align: center;
+		padding: 5px ;
+		margin: 0;
+		min-width: 300px;
+		}
+
+
+ul li {
+		display: inline-block;
+		padding: 5px;
+		width: 170px;
+		vertical-align: top;
+		}
+
+a.foot:link, a.foot:visited {font-size:10px; color: #D2D7D3; text-decoration:none; }
+a.foot:hover, a.foot:focus, a.foot:active { font-size:10px; color: #95A5A6; text-decoration:none; }
+
+
+/* FIN DU FOOTER */
+
+/* FIN DU CSS */

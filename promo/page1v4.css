@@ -1,0 +1,339 @@
+/* RESET CSS */
+
+body, header, nav, header ul, header ul li, header ul li ul {
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+
+/* BACKGROUND, TYPO, PAGE SIZE */
+
+body {
+    width: 1024px;
+    height: 1000px;
+    margin: auto;
+    background-color: #FFFFFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    background-image: url(http://192.168.0.150/LROSSINI/images/logosimplon.png);
+}
+
+
+/*FIN DU BODY, TYPO, PAGE SIZE */
+
+
+/* HEADER */
+
+header {
+    height: 198px;
+    border: none;
+}
+
+.titre {
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/* ==== HEADER: MENU */
+
+nav {
+    border-top: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+    height:50px;
+}
+
+nav ul {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 170px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    margin-right: 12px;
+    margin-left:12px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #81B934;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+nav ul li ul {
+    display: none;
+    padding-top: 15px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav li:hover ul li {
+    float: none;
+    padding: 0;
+    padding-top: 8px;
+}
+
+nav li ul {
+    position: absolute;
+    text-align: left;
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+    width: 170px;
+}
+
+nav li ul a {
+    color: #000000;
+    font-family: 'Molengo', Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 4px;
+    display: block;
+    background: transparent;
+    width: 230px;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    line-height: 20px;
+}
+
+nav li ul a:hover {
+    color: #81B934;
+    background: #EDF2E3;
+    padding-left: 20px;
+    width: 160px;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+
+/* FIN DU HEADER*/
+
+
+/* ASCENSEUR */
+
+#fleche-up {
+    border: none;
+    width: 64px;
+    height: 64px;
+    z-index: 10;
+    margin-right: 2px;
+    position: fixed;
+    bottom: 50%;
+    top: 80%;
+    right: 0%;
+    left: 92%;
+}
+
+
+/* FIN DE L'ASCENSEUR */
+
+
+/*      CORPS      */
+
+.sec1 {
+    margin-top: 35px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#sec1darrow {
+    height: 30px;
+    width: 30px;
+        opacity: 0.2;
+}
+
+#sec1uparrow {
+    height: 30px;
+    width: 30px;
+
+}
+
+.sec2 {
+    height: 0px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#sec2darrow {
+    height: 30px;
+    width: 30px;
+}
+
+#sec2uparrow {
+    height: 30px;
+    width: 30px;
+    opacity: 0.2;
+}
+
+.sec3 {
+    height: 0px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#sec3darrow {
+    height: 30px;
+    width: 30px;
+}
+
+#sec3uparrow {
+    height: 30px;
+    width: 30px;
+    opacity: 0.2;
+}
+
+#t1 {
+    text-align: center;
+    font-family: 'Merriweather';
+}
+
+#t2 {
+    text-align: center;
+    font-family: 'Merriweather';
+}
+
+#t3 {
+    text-align: center;
+    font-family: 'Merriweather';
+}
+
+#i1 {
+    height: 352px;
+    width: 450px;
+    float: right;
+    padding-right: 10px;
+}
+
+#i2 {
+    height: 308px;
+    width: 450px;
+    float: left;
+    padding-right: 20px;
+    opacity: 0;
+    padding-top: 20px;
+}
+
+#i3 {
+    height: 308px;
+    width: 450px;
+    float: right;
+    padding-right: 10px;
+    opacity: 0;
+    margin-top: 10px;
+}
+
+#l1 {
+    border-left: 2px solid black;
+}
+
+#l2 {
+    border-right: 2px solid black;
+}
+
+#l3 {
+    border-left: 2px solid black;
+}
+
+section em {
+    color: limegreen;
+}
+
+.calendar {
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: Merriweather;
+}
+
+#caldarrow {
+    height: 30px;
+    width: 30px;
+}
+
+#caluparrow {
+    height: 30px;
+    width: 30px;
+    opacity: 0.2;
+}
+
+#imgcalendrier {
+    width: 1000px;
+    height: 0px;
+    overflow: hidden;
+}
+
+#haut {
+    float: right;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+    margin-bottom: 10px;
+    background-color: #000000;
+}
+
+h5 {
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+footer p {
+    font-size: 10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+footer ul {
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 5px;
+    width: 170px;
+    vertical-align: top;
+}
+
+a.foot:link, a.foot:visited {
+    font-size: 10px;
+    color: #D2D7D3;
+    text-decoration: none;
+}
+
+a.foot:hover, a.foot:focus, a.foot:active {
+    font-size: 10px;
+    color: #95A5A6;
+    text-decoration: none;
+}
+ul li{
+    display: block;
+    text-align: left;
+    width: auto;
+}

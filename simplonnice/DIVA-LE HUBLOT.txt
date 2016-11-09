@@ -1,0 +1,17 @@
+<p class="titretexte">DIVA</p>
+<p class="texte">L'association Diva a été créée en 1994 par un collectif d'artistes afin de soutenir la création artistique et sa diffusion vers un large public. 
+<br />
+L'originalité de sa démarche est cette volonté, commune à chacun des artistes, d'explorer de nouvelles formes artistiques, de sortir des lieux de spectacles traditionnels et d'interroger les relations que les publics entretiennent avec la création artistique.
+</p>
+<p class="texte">
+Compagnies de théâtre de rue, carnaval de quartier, groupes de musiques populaires, ouverture de lieux alternatifs (collectif des Diables bleus) jalonnent l'itinéraire de l'association jusqu'à l'émergence d'un lieu de création et de résidence spectacle vivant, l'Entre-Pont et d'un pôle multimédia, le Hublot, au sein de la Halle Spada.
+</p>
+<br />
+
+<p class="texte">LE HUBLOT</p>
+<p class="texte"><a href="http://www.lehublot.net/" class="" target"_blank">Le Hublot</a>, centre de création et d'innovations numériques à Nice labellisé "Grande Ecole du Numérique" en Mars 2016 oeuvre depuis 2004 auprès des habitant-e-s du quartier Est de la ville en leur proposant un point d'accès à Internet, un centre de création multimédia pour les jeunes publics, un lieu de formations personnalisées et un centre de ressources numériques dans la création artistique. 
+<br />
+Implanté à <a href="http://entrepont.net/index.php/lentre-pont" class="" target"_blank">l'Entre-Pont</a>, friche artistique fraichement déménagée de la Halle Spada vers les anciens abattoirs, le Hublot poursuit son action en faveur de la création en favorisant les relations du spectacle vivant, de la danse, de la musique et du théâtre avec les arts numériques.
+</p>
+
+
